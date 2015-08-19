@@ -5,7 +5,7 @@ This is the primary repository of source code for the official CDL Mobile app ve
 
 Dependencies
 
-1. The List of Plugins required
+The List of Plugins required
 
 ch.ti8m.documenthandler 0.2.2 "Document Handler"
 com.ionic.keyboard 1.0.4 "Keyboard"
@@ -26,7 +26,7 @@ nl.x-services.plugins.launchmyapp 3.2.4 "Custom URL scheme"
 Use the command: cordova plugin add "plugin name" to install the plugin
 The last two plugins are a bit tricky to install. 
 
-2. List of JavaScript Library required
+The List of JavaScript Library required
 
 angular-aria
 angular-md5
