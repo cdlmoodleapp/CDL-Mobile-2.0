@@ -18,7 +18,62 @@ angular.module('mm.core.settings', [])
 
     $stateProvider
 
-    .state('site.mm_settings', {
+    //site.mm_oaucdl
+
+    .state('site.mm_oaucdl', {
+        url: '/mm_oaucdl',
+        views: {
+            'site': {
+                templateUrl: 'core/components/settings/templates/oaucdllist.html'
+            }
+        }
+    })
+
+    .state('site.mm_oaucdl-home', {
+            url: '/mm_oaucdl-home',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/home.html'
+                    controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+    .state('site.mm_oaucdl-degree', {
+            url: '/mm_oaucdl-degree',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/degree.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+    .state('site.mm_oaucdl-predegree', {
+            url: '/mm_oaucdl-predegree',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/degree.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+    .state('site.mm_oaucdl-master', {
+            url: '/mm_oaucdl-master',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/master.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+
+   
+
+//site.mm_settings
+   .state('site.mm_settings', {
         url: '/mm_settings',
         views: {
             'site': {
@@ -26,6 +81,17 @@ angular.module('mm.core.settings', [])
             }
         }
     })
+    
+    
+   // .state('site.mm_settings-home', {
+   //      url: '/mm_settings-home',
+   //      views: {
+   //          'site': {
+   //              templateUrl: 'core/components/settings/templates/home.html'
+   //          }
+   //      }
+   //  })
+
 
     .state('site.mm_settings-about', {
         url: '/mm_settings-about',
@@ -66,5 +132,4 @@ angular.module('mm.core.settings', [])
             }
         }
     });
-
 });

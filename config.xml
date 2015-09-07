@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.cdlmobile" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.moodle.moodlemobile" version="2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>CDL Mobile</name>
-  <description>The CDL Mobile is the official App of the Centre for Distance Learning, OAU</description>
-  <author href="http://oaucdl.edu.ng" email="olalekan.joseph@gmail.com">Oni Olalekan</author>
+  <description>&#xD;
+        The CDL Mobile is the official App of the Centre for Distance Learning, OAU&#xD;</description>
+  <author href="http://cdl.oauife.edu.ng" email="ooni@oaucdl.edu.ng">CDL Multimedia</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-navigation href="cdvfile:*"/>

@@ -43,7 +43,7 @@ angular.module('mm.core.login', [])
         onEnter: function($state, $mmSitesManager) {
             // Skip this page if there are no sites yet.
             $mmSitesManager.hasNoSites().then(function() {
-                $state.go('mm_login.site');
+                $state.go('site.mm_login');
             });
         }
     })
@@ -52,6 +52,46 @@ angular.module('mm.core.login', [])
         url: '/site',
         templateUrl: 'core/components/login/templates/site.html',
         controller: 'mmLoginSiteCtrl'
+    })
+
+    .state('site.mm_login', {
+        url: '/mm_login',
+        views: {
+            'site': {
+                templateUrl: 'core/components/login/templates/site.html',
+                controller: 'mmLoginSiteCtrl'
+            }
+        }
+    })
+
+     .state('site.mm_login-predegree', {
+        url: '/mm_login-predegree',
+        views: {
+            'site': {
+                templateUrl: 'core/components/login/templates/predegree.html',
+                controller: 'mmLoginPredegreeCtrl'
+            }
+        }
+    })
+
+    .state('site.mm_login-home', {
+        url: '/mm_login-home',
+        views: {
+            'site': {
+                templateUrl: 'core/components/login/templates/home.html',
+                controller: 'mmLoginHomeCtrl'
+            }
+        }
+    })
+
+    .state('site.mm_login-degree', {
+        url: '/mm_login-degree',
+        views: {
+            'site': {
+                templateUrl: 'core/components/login/templates/degree.html',
+                controller: 'mmLoginDegreeCtrl'
+            }
+        }
     })
 
     .state('mm_login.credentials', {
@@ -68,6 +108,8 @@ angular.module('mm.core.login', [])
             }
         }
     })
+
+   
 
     .state('mm_login.reconnect', {
         url: '/reconnect',

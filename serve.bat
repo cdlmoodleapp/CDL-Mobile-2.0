@@ -1,0 +1,3 @@
+dir
+ionic serve
+pause

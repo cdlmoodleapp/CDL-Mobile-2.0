@@ -39,6 +39,11 @@
                             <span ng-show="plugin.data.badge > 0" class="badge badge-positive">{{plugin.data.badge}}</span>
                         </a>
                     </li>
+                    <li>
+                        <a menu-close class="item item-icon-left" ui-sref="site.mm_oaucdl" title="{{ 'OAU-CDL' | translate}}">
+                            <i class="icon ion-gear-b"></i>{{ 'OAU-CDL' | translate}}
+                        </a>
+                    <li>
                     <a menu-close class="item item-icon-left" ng-href="{{siteinfo.siteurl}}" mm-browser title="{{ 'mm.sidemenu.website' | translate}}">
                         <i class="icon ion-earth"></i>{{ 'mm.sidemenu.website' | translate}}
                     </a>
@@ -54,6 +59,7 @@
                             <i class="icon ion-gear-b"></i>{{ 'mm.sidemenu.appsettings' | translate}}
                         </a>
                     <li>
+                    
                     </li>
                         <a menu-close class="item item-icon-left" ng-click="logout()" title="{{ 'mm.sidemenu.logout' | translate}}">
                             <i class="icon ion-log-out"></i>{{ 'mm.sidemenu.logout' | translate}}

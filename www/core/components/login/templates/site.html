@@ -1,21 +1,51 @@
-<ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}">
-  <ion-nav-buttons side="secondary">
-      <button class="button button-icon ion-ios-help-outline" ng-click="showHelp()"></button>
-  </ion-nav-buttons>
-  <ion-content>
-      <div class="list">
-        <div class="item item-text-wrap">{{ 'mm.login.newsitedescription' | translate }}</div>
-        <form>
-          <label class="item item-input item-stacked-label">
-            <span class="input-label">{{ 'mm.login.siteaddress' | translate }}</span>
-            <input type="url" placeholder="moodle.org" ng-model="siteurl" mm-no-input-validation ng-change="validate(siteurl)" >
-          </label>
-          <div class="item">
-              <button class="button button-block" ng-click="connect(siteurl)" ng-disabled="isInvalidUrl">{{ 'mm.login.connect' | translate }}</button>
-              <!-- <input type="submit" class="button button-block" value="{{ 'mm.login.connect' | translate }}" > -->
-          </div>
-        </form>
-      </div>
-    </form>
-  </ion-content>
+<!-- <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}"> -->
+<ion-view  view-title="{{ 'Welcome to Centre for Distance Learning, Obafemi Awolowo University, Ile-Ife' | translate }}">
+    <ion-nav-buttons side="secondary">
+      <button class="button " ng-click="connect('197.211.47.83/portal')" >{{ 'Login Here' | translate }}</button>
+      
+    </ion-nav-buttons> 
+
+  <mm-split-view>
+        <ion-content>
+            <ul class="list">
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-home" title="{{ 'Home' | translate }}">
+                        {{ 'Home' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-degree" title="{{ 'Degree' | translate }}">
+                        {{ 'Degree' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-predegree" title="{{ 'Pre-Degree' | translate }}">
+                        {{ 'Pre-Degree' | translate }}
+                    </a>
+                </li>
+                <!-- <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
+                        {{ 'home' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
+                        {{ 'home' | translate }}
+                    </a>
+                </li> -->
+               <!--  <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-synchronization" title="{{ 'Diploma' | translate }}">
+                        {{ 'Diploma' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-predegree" title="{{ 'Masters' | translate }}">
+                        {{ 'Masters' | translate }}
+                    </a>
+                </li> -->
+            </ul>
+            
+        </ion-content>
+    </mm-split-view>
+  
 </ion-view>
