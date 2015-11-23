@@ -1,0 +1,41 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+    <ion-side-menu-content>
+
+        <ion-nav-bar class="bar-content">
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+            <ion-nav-buttons side="left">
+                <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+
+        <ion-nav-view name="mainsite">
+        </ion-nav-view>
+
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left">
+        
+        <ion-content class="has-side-menu-header">
+            <nav>
+                <ul class="list dark">
+                  
+                    <li>
+                        <a menu-close class="item item-icon-left" ui-sref="mainsite.mm_oaucdl" title="{{ 'Programmes' | translate}}">
+                            <i class="icon ion-gear-b"></i>{{ 'Programmes' | translate}}
+                        </a>
+                    <li>
+                    
+                   
+                </ul>
+            </nav>
+
+            <!-- For now we won't have pull to refresh caches.
+            <ion-refresher pulling-text="Pull to invalidate caches"
+                on-refresh="invalidateCaches()"
+                refreshing-icon="ion-loading-c"> -->
+
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

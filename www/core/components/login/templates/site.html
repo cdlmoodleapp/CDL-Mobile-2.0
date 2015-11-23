@@ -1,51 +1,236 @@
 <!-- <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}"> -->
-<ion-view  view-title="{{ 'Welcome to Centre for Distance Learning, Obafemi Awolowo University, Ile-Ife' | translate }}">
-    <ion-nav-buttons side="secondary">
-      <button class="button " ng-click="connect('197.211.47.83/portal')" >{{ 'Login Here' | translate }}</button>
-      
+
+<ion-view  view-title="{{ 'OAUCDL MOBILE' | translate }}">
+<!-- <ion-view  title='<img ng-src="img/oaulogo_cw.png">'> -->
+    
+    
+
+    <ion-nav-buttons side="primary">
+      <img style="height:37px; float:left;" src="img/oaulogo_cw.png">
     </ion-nav-buttons> 
 
-  <mm-split-view>
+    <ion-nav-buttons side="secondary">
+      <button class="button" ng-click="connect('m.oaucdl.edu.ng')" >{{ 'Login Here' | translate }}</button>
+      
+    </ion-nav-buttons> 
+ 
         <ion-content>
-            <ul class="list">
-                <li>
-                    <a class="item" mm-split-view-link="site.mm_login-home" title="{{ 'Home' | translate }}">
-                        {{ 'Home' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a class="item" mm-split-view-link="site.mm_login-degree" title="{{ 'Degree' | translate }}">
-                        {{ 'Degree' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a class="item" mm-split-view-link="site.mm_login-predegree" title="{{ 'Pre-Degree' | translate }}">
-                        {{ 'Pre-Degree' | translate }}
-                    </a>
-                </li>
-                <!-- <li>
-                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
-                        {{ 'home' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
-                        {{ 'home' | translate }}
-                    </a>
-                </li> -->
-               <!--  <li>
-                    <a class="item" mm-split-view-link="site.mm_settings-synchronization" title="{{ 'Diploma' | translate }}">
-                        {{ 'Diploma' | translate }}
-                    </a>
-                </li>
-                <li>
-                    <a class="item" mm-split-view-link="site.mm_settings-predegree" title="{{ 'Masters' | translate }}">
-                        {{ 'Masters' | translate }}
-                    </a>
-                </li> -->
-            </ul>
+         
+<ion-view title="Tabs">
+    <ion-tabs class="tabs-stable tabs-icon-top">
+        <ion-tab title="HOME" icon="ion-android-home">
+            <ion-content padding="true" class="has-header">
+                <h2>OAUCDL MOBILE!</h2>
+                <div> 
+                  <img class="icon ion-image" src="img/oau1.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                   <h4> <p>Thank you for installing the first version of the Official Mobile Application of the Centre for Distance Learning, Obafemi Awolowo University, Ile-Ife,<strong> OAUCDLMobile 1.0</strong>.</h4>
+                    </p>
+                    <p>Our Mobile App was created to enable an easier and more effective access to all important activities that typically brings you to our website or our Centre in Osun State.</p>
+                    <p> Some of these activities include instant access to Information on any of our programmes, online application, course registration, checking of results and online payments. We have also enable the App to facilitate eLearning.
+                    </p>
+                </div>
+                 <div class="list">
+      <div class="item item-text-wrap">{{ 'Do you already have an account? Please click on the button below to login.' }}</div>
+     <button class="button button-stable button-block" ng-click="connect('m.oaucdl.edu.ng')" >{{ 'Login Here' | translate }}</button>
+     <div class="item item-text-wrap">{{ 'You do not have an account yet? It will take just some few minutes on our website.' }}</div>
+     <button class="button button-stable button-block" href="http://m.oaucdl.edu.ng/login/signup.php" mm-browser >{{ 'Create an account' | translate }}</button></br></br>
+
+
+
+
+            </ion-content>
+        </ion-tab>
+          <ion-tab title="ABOUT" icon="ion-android-globe">
+            <ion-content padding="true" class="has-header">
+                <h3>ABOUT OAUCDL</h3>
+                <div> 
+                  <img class="icon ion-image" src="img/director.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                    <h4><p>Established in 2002 by the Governing Council of Obafemi Awolowo University, our centre was charged solely with the responsibility to facilitate the development and co-ordinate the delivery of degree and sub-degree programmes by open and distance learning mode through the use of modern information and communication technologies.
+                    </p>
+
+                   <p> The mission of OAU Distance Learning is to develop and provide through emerging network technologies, responsive and quality distance learning opportunities that meet diverse local, national and global needs.
+                    </p></h4>
+                    <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=mission" mm-browser >{{ 'Find out more about OAUCDL' | translate }}</button>
+
+                </div>
+
+                   <div class="item item-text-wrap">{{ 'Do you already have an account? Please click on the button below to login.' }}</div>
+     <button class="button button-stable button-block" ng-click="connect('m.oaucdl.edu.ng')" >{{ 'Login Here' | translate }}</button>
+     <div class="item item-text-wrap">{{ 'You do not have an account yet? It will take just some few minutes on our website.' }}</div>
+     <button class="button button-stable button-block" href="http://m.oaucdl.edu.ng/login/signup.php" mm-browser >{{ 'Create an account' | translate }}</button></br></br></br>
+            </ion-content>
+            </ion-tab>
+          <ion-tab title="PROGRAMS" icon="ion-android-folder">
+            <ion-content padding="true" class="has-header">
+                <h3>OUR PROGRAMMES</h3>
+                <div> 
+                  <img class="icon ion-image" src="img/program.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                    <p><h4>The historical strength of our University lends itself to helping us develop programmes that are recognised for their excellence. Our programmes could provide you with the flexibility and qualifications you need to stay competitive in your career.</p>
+
+                        <p>Some of our programme requires you to have previous qualification; as such you need to examine the programme you want study to ascertain its requirements. Choosing the right programme is crucial.</h4></p>
+                    
+                </div>
+               
+               <!--  <ion-list>
+                    <ion-item>PREDGREE</ion-item>
+                    <ion-item>JUPEB</ion-item>
+                    <ion-item>DIPLOMA</ion-item>
+                    <ion-item>CERTIFICATE</ion-item>
+                    <ion-item>DEGREE</ion-item>
+                    <ion-item>POST-GRADUATE</ion-item>
+                   
+                </ion-list> -->
+
+</br><h4>PREDEGREE</h4>
+                <div> 
+                  <img class="icon ion-image" src="img/6.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                    <p>Our Pre-degree programme is designed to be an intensive coaching curriculum aimed at preparing senior high school graduates (senior secondary) for university education.Given the prevalence of deficiencies students carried over from secondary schools, our Pre-degree programme help students deal with the setbacks that often accompany such circumstances by providing them with a good head-start which will facilitate superior academic performance in the university.</p>
+                    
+                </div>
+
+
+ <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=programmes" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>    
+     <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+
+</br><h4>DIPLOMA</h4>
+                <div> 
+                  <img class="icon ion-image" src="img/3.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                    <p>Move higher in your academic ladder by enhancing your skills and expertise as well as equipping yourself with essential knowledge that is valued by industry and higher institutions of education. Diploma in Conservation Science and Tourism 
+Improve your technical expertise to function effectively in conservation and tourism. Develop yourself and obtain professional and academic qualification in Theatre and Media Arts. Diploma in Education: Take the moment to equip yourself and acquire teaching qualification skills.</p>
+
+<p>Diploma in Fine and Applied Arts: Indulge yourself in the realm of visual arts by learning its practical and theoretical aspects.Diploma in Music :Equip yourself by acquiring an edge in music with understanding in its universal dimensions. Diploma in Physical and Health Education 
+Get the know-how to become effective games masters and sports organizers. Diploma in Yoruba Studies Achieve great competence and sophistication in your understanding and appreciation of Yoruba Language.</p>
+                    
+                </div>
+
+
+ <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=programmes" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>    
+     <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                </br><h4>JUPEB</h4>
+                                <div> 
+                  <img class="icon ion-image" src="img/jupeb.png" style="width: 100%;">                 
+                </div>
+                <div>
+                    <p>JUPEB is a National Examination body saddled with the responsibility of conducting examinations for students, who have undergone approved subject combinations and are seeking Direct Entry admissions into Nigerian and partnering foreign tertiary institutions. The establishment of this examinations body was recently approved by the federal government of Nigeria to fill the gap created by the discontinuance of Advance Level Examinations.</p>                    
+                </div>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=programmes" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button>
+
+              </br><h4>DEGREE</h4>
+                                <div> 
+                  <img class="icon ion-image" src="img/degree.jpg" style="width: 100%;">                 
+                </div>
+                <div></br><h5>Bachelor's Degree in Nursing Science</h5>
+                    <p>All Nursing Students will take core courses which provide knowledge in basic Nursing philosophy and practices; Elective courses in Law, Sociology and Computer Science are taken. As part of the academic programme, each Candidate would be required to go on six (6) weeks community and hospital postings in their 3rd and 4th sessions respectively. The Students would have designated Clinical Preceptors for this purpose they will be expected to have a seminar whereby they will share the experience they had throughout the period of posting.</p>                    
+                
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=ug-nursing-science" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                 </div>
+                <div></br><h5>Bachelor's Degree in Accounting</h5>
+                    <p>The specific objectives of the programme include the following the provision of basic knowledge needed for an understanding and analysis of problems of financial management of industrial, commercial, public and other human organizations,as well as the equipment of students with the skills needed for recognizing, defining problems and taking appropriate decisions, using scientific techniques and tools.</p>                    
+                
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=ug-accounting" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                 </div>
+                <div></br><h5>Bachelor's Degree in Economics</h5>
+                    <p>The specific objectives of the programme include Introduction to economic issues and basic principles and methods of microeconomics: how markets work, market efficiency and market failure, firm and consumer behavior, policy issues such as taxation, international trade, the environment, and the distribution of income.</p>                    
+                
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=ug-economics" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                 </div>
+
+              </br><h4>POSTGRADUATE</h4>
+                                <div> 
+                  <img class="icon ion-image" src="img/graduate.png" style="width: 100%;">                 
+                </div>
+                    <div>
+                    <p>Executive Masters Programmes are advanced level of master's degrees designed especially for mid-career executive professionals. These programmes are usually attended by full-time working professionals; therefore the programs are scheduled to match this condition. The OAU CDL Executive Masters Programmes have the eLearning advantage. With opportunities for online lectures, OAU-CDL Executive masters Students have the leverage of being part of an OAU standard teaching and learning experience without necessarily being adversely distracted from their normal day to day business.</p>                    
+                
+                <button class="button button-stable button-block" href="http://pg.oaucdl.edu.ng/" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                 </div>
+               </br><h4>CERTIFICATE</h4>
+                                <div> 
+                  <img class="icon ion-image" src="img/cert1.jpg" style="width: 100%;">                 
+                </div>
+                    <div>
+                    <p>Our practical-oriented certificate programmes will help you develop your skills for superior performance. With hand-on experience, you can acquire new skills if you so desire to add value to your professional career.</p>                    
+                
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=certificate" mm-browser >{{ 'FIND OUT MORE' | translate }}</button>
+                <button class="button button-stable button-block" href="http://www.oaucdl.edu.ng/home/?q=apply" mm-browser>{{ 'APPLY NOW' | translate }}</button></br>
+                 </div></br></br>
+
+                 </ion-content>        
+        </ion-tab>
+        
+       <ion-tab title="CONTACT" icon="ion-android-call">
+           <ion-content padding="true" class="has-header">
+                <h3>CONTACT US</h3>
+                                <div> 
+                  <img class="icon ion-image" src="img/oau.jpg" style="width: 100%;">                 
+                </div>
+                <div>
+                    <p><h4>We appreciate the time you've taken to install the OAUCDL Mobile App and we look forward to assisting you in any way we can. Please feel free to contact us if you have any enquiries or comments. We will provide a response as soon as possible.</p></h4>
+
+                        <p>Please kindly note that for ease of reaching us, we have provided an Instant Messaging tool within the App that enables you to chat with any of our support personnel.</p>
+                        <div>
+<h4>OUR OFFICIAL CONTACT<h4>
+<h3><p>Centre for Distance Learning,</br>
+Obafemi Awolowo University,</br>
+Ile-Ife, 220005</br>
+Osun State,</br>
+Nigeria.</p></h3>
+
+<p></h4>info@oaucdl.edu.ng</br>
+predegree@oaucdl.edu.ng</br>
+jupeb@oaucdl.edu.ng</br>
+programme@oaucdl.edu.ng</br>
+elearning@oaucdl.edu.ng</h4></p>
+
+<p>Tel: </h4>+234(0)810 828 7293</h4></br> </h4>+234(0)905 225 1560 </h4></p>
+
+</div>
+
+                        <div class="item item-text-wrap">{{ 'Do you already have an account? Please click on the button below to login.' }}</div>
+     <button class="button button-stable button-block" ng-click="connect('m.oaucdl.edu.ng')" >{{ 'Login Here' | translate }}</button>
+     <div class="item item-text-wrap">{{ 'You do not have an account yet? It will take just some few minutes.' }}</div>
+    <button class="button button-stable button-block" href="http://m.oaucdl.edu.ng/login/signup.php" >{{ 'Create an account' | translate }}</button>
+
+
+                    
+                </div>
+                <button class="button button-stable button-block ">Visit Our Website</button></br></br></br>
+            </ion-content>
+        </ion-tab>
+    </ion-tabs>
+
+
+
+    
+      
+    </div>
+
+
+
+
+
+
             
         </ion-content>
-    </mm-split-view>
+    
   
+
+
+
+
 </ion-view>

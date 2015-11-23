@@ -3,7 +3,7 @@
     "cancel": "Cancel",
     "cannotdownloadfiles": "File downloading is disabled in your Mobile service, the app can't work with this setting disabled. Please, contact your site administrator.",
     "credentials": "Credentials",
-    "credentialsdescription": "Please provide your username and password to login on ",
+    "credentialsdescription": "Do you have an account, Please provide your username and password to login ",
     "confirmdeletesite": "Are you sure you want to delete the site {{sitename}}?",
     "connect": "Connect!",
     "connecttomoodle": "Connect to Moodle",

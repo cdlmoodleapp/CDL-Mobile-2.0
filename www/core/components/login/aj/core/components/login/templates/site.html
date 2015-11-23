@@ -1,0 +1,60 @@
+<!-- <ion-view view-title="{{ 'mm.login.connecttomoodle' | translate }}"> -->
+
+<ion-view  view-title="{{ 'Welcome to Centre for Distance Learning, Obafemi Awolowo University, Ile-Ife' | translate }}">
+<!-- <ion-view  title='<img ng-src="img/oaulogo_cw.png">'> -->
+    
+    
+
+    <ion-nav-title>
+      <img style="height:100%; float:left;" src="img/oaulogo_cw.png">
+    </ion-nav-title>
+
+    <ion-nav-buttons side="secondary">
+      <button class="button " ng-click="connect('m.oaucdl.edu.ng')" >{{ 'Login Here' | translate }}</button>
+      
+    </ion-nav-buttons> 
+
+  <mm-split-view >
+        <ion-content>
+            <ul class="list">
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-home" title="{{ 'Home' | translate }}">
+                        {{ 'Home' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-degree" title="{{ 'Degree' | translate }}">
+                        {{ 'Degree' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_login-predegree" title="{{ 'Pre-Degree' | translate }}">
+                        {{ 'Pre-Degree' | translate }}
+                    </a>
+                </li>
+                <!-- <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
+                        {{ 'home' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-home" title="{{ 'home' | translate }}">
+                        {{ 'home' | translate }}
+                    </a>
+                </li> -->
+               <!--  <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-synchronization" title="{{ 'Diploma' | translate }}">
+                        {{ 'Diploma' | translate }}
+                    </a>
+                </li>
+                <li>
+                    <a class="item" mm-split-view-link="site.mm_settings-predegree" title="{{ 'Masters' | translate }}">
+                        {{ 'Masters' | translate }}
+                    </a>
+                </li> -->
+            </ul>
+            
+        </ion-content>
+    </mm-split-view>
+  
+</ion-view>

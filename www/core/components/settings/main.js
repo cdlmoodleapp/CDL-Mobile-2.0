@@ -70,7 +70,58 @@ angular.module('mm.core.settings', [])
         })
 
 
-   
+     .state('site.mm_oaucdl-jupeb', {
+            url: '/mm_oaucdl-jupeb',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/jupeb.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+
+  .state('site.mm_oaucdl-certificate', {
+            url: '/mm_oaucdl-certificate',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/certificate.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+
+    .state('site.mm_oaucdl-diploma', {
+            url: '/mm_oaucdl-diploma',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/diploma.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+  .state('site.mm_oaucdl-contact', {
+            url: '/mm_oaucdl-contact',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/contact.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
+  .state('site.mm_oaucdl-live', {
+            url: '/mm_oaucdl-live',
+            views: {
+                'site': {
+                    templateUrl: 'core/components/settings/templates/live.html'
+                    //controller: 'mmLoginHomeCtrl'
+                }
+            }
+        })
+
 
 //site.mm_settings
    .state('site.mm_settings', {

@@ -1,0 +1,4 @@
+1. C:\Users\tosinloluwa\Documents\cdl\CDL-Mobile-2.0.1\www\core\components\settings\templates/list.html (the list)
+2. C:\Users\tosinloluwa\Documents\cdl\CDL-Mobile-2.0.1\www\core\components\settings/main.js (where it is controlled)
+3. C:\Users\tosinloluwa\Documents\cdl\CDL-Mobile-2.0.1\www\build/mm.build.js (for ionic serve)
+4. C:\Users\tosinloluwa\Documents\cdl\CDL-Mobile-2.0.1\www\core\components\settings\templates/live.html (the file to load)

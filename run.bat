@@ -1,3 +1,3 @@
 dir
-cordova run android
+cordova build --release android
 pause
